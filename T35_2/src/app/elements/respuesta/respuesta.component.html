@@ -1,32 +1,23 @@
-<div class="container">
+<article id="recibido">
+  <header>
+    <h2>Recibido!</h2>
+  </header>
 
-  <div class="row" id="recibido">
-    <header><h2>Recibido!</h2></header>
-    <div class="col-7"></div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Mensaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{nombre}}</td>
+        <td>{{email}}</td>
+        <td>{{mensaje}}</td>
+      </tr>
+    </tbody>
+  </table>
 
-    <div class="col-5" id="colAltaNombres">
-      <div>
-
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Nombre</th>
-                <th>Email</th>
-                <th>Mensaje</th>
-              </tr>
-              <tr>
-                <td>{{nombre}}</td>
-                <td>{{email}}</td>
-                <td>{{mensaje}}</td>
-              </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-          </table>
-
-      </div>
-    </div>
-
-  </div>
-</div>
+</article>

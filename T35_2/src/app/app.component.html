@@ -1,9 +1,14 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<div>
-  <app-formulario (showMessageReceivedEvenEmitter)="showRespuestaComp($event)"></app-formulario>
-  <app-respuesta nombre="{{nombre}}" email="{{email}}" mensaje="{{mensaje}}" *ngIf="showRespuesta"></app-respuesta>
+<div class="row">
+  <div class="col-sm-6">
+    <app-formulario (showMessageReceivedEvenEmitter)="showRespuestaComp($event)"></app-formulario>
+  </div>
+  <div class="col-sm-6">
+    <app-respuesta nombre="{{nombre}}" email="{{email}}" mensaje="{{mensaje}}" *ngIf="showRespuesta"></app-respuesta>
+  </div>
 </div>
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet></router-outlet>
