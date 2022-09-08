@@ -10,7 +10,7 @@ export class FormularioComponent implements OnInit {
   nombre: string = '';
   email: string = '';
   mensaje: string = '';
-  mnsCompleto: string[] = [];
+  validacion: string = '';
 
   @Output() showMessageReceivedEvenEmitter = new EventEmitter<boolean>(false);
 
@@ -21,6 +21,10 @@ export class FormularioComponent implements OnInit {
 
   processForm(show: boolean){
     this.showMessageReceivedEvenEmitter.emit(show);
+    this.nombre = '';
+    this.email = '';
+    this.mensaje = '';
+    this.validacion = '';
   }
 
 }
