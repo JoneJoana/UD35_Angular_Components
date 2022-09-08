@@ -1,1 +1,35 @@
-<p>listado works!</p>
+<div class="container">
+
+  <div class="row" id="listado">
+    <header>Listado Clientes</header>
+    <!-- tres columnas por estructura - 1a vacia -->
+    <div class="col-3"></div>
+
+    <div class="col-6" id="colAltaNombres">
+      <div>
+        <!-- tabla que vaa haciendo segun los registros
+          de clientes. ver como accedo a los datos de alta-cliente -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>CIF</th>
+                <th>Direccion</th>
+                <th>Grupo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let cliente of clientes">
+                <td>{{cliente.name}}</td>
+                <td>{{cliente.cif}}</td>
+                <td>{{cliente.addres}}</td>
+                <td>{{cliente.group}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -32,11 +32,21 @@ export class AltaClienteComponent implements OnInit {
 
     //metemos la variable en el array para guardarlo en memoria
     this.clientes.push(cliente);
+    //limpiamos inputs
+    this.name = '';
+    this.cif = '';
+    this.addres= '';
+    this.group = '';
   }
+
+  verList(){
+
+  }
+
 }
 
 // creamos un dto de cliente para tener la estructura clara
-interface Client {
+export interface Client {
   name: string,
   cif: string,
   addres: string,
