@@ -32,8 +32,11 @@ export class AltaClienteComponent implements OnInit {
       group: this.group
     }
 
-    //metemos la variable en el array para guardarlo en memoria
-    this.clientes.push(cliente);
+    if((this.name != ''||this.cif != '')&&this.group != ''){
+      //metemos la variable en el array para guardarlo en memoria
+      this.clientes.push(cliente);
+    }
+
     //limpiamos inputs
     this.name = '';
     this.cif = '';
