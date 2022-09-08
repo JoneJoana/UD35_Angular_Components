@@ -1,8 +1,8 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <div>
-  <app-formulario></app-formulario>
-  <app-respuesta></app-respuesta>
+  <app-formulario (showMessageReceivedEvenEmitter)="showRespuestaComp($event)"></app-formulario>
+  <app-respuesta nombre="{{nombre}}" email="{{email}}" mensaje="{{mensaje}}" *ngIf="showRespuesta"></app-respuesta>
 </div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 

@@ -5,21 +5,21 @@
 
       <div class="input-group"> <!-- mb-3 da espaciado entre los componentes -->
         <span class="input-group-text" id="basic-addon3">Nombre</span>
-        <input type="text" class="form-control" placeholder="Nombre y apellidos">
+        <input type="text" class="form-control" placeholder="Nombre y apellidos" [(ngModel)] = 'nombre'>
       </div>
       <div class="form-text">Introduce tu nombre</div>
       <br>
 
       <div class="input-group">
         <span class="input-group-text" id="basic-addon3">Email</span>
-        <input type="text" class="form-control" placeholder="example@gmail.com">
+        <input type="text" class="form-control" placeholder="example@gmail.com" [(ngModel)] = 'email'>
       </div>
       <div class="form-text">Introduzca un email válido</div>
       <br>
 
       <div class="input-group">
         <span class="input-group-text">Mensaje</span>
-        <textarea class="form-control"></textarea>
+        <textarea class="form-control" [(ngModel)] = 'mensaje'></textarea>
       </div>
       <div class="form-text">Introduzca un mensaje</div>
       <br>
@@ -31,7 +31,7 @@
       <div id="help" class="form-text">Validación anti-spam incorrecta</div>
       <br>
 
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="submit" class="btn btn-primary" (click)="processForm(true)">Enviar</button>
 
     </div>
 

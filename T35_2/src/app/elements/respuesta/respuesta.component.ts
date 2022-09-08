@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-respuesta',
   templateUrl: './respuesta.component.html',
   styleUrls: ['./respuesta.component.css']
 })
-export class RespuestaComponent implements OnInit {
+export class RespuestaComponent{
+
+  @Input() nombre: string = '';
+  @Input() email: string = '';
+  @Input() mensaje: string = '';
 
   constructor() { }
 

@@ -17,6 +17,7 @@ export class AppComponent implements AfterViewInit{
 
   ngAfterViewInit(): void {
     this.clients = this.altaClientes.clientes
+    console.log("ngAfterViewInit")
   }
 
   showList: boolean = false;
