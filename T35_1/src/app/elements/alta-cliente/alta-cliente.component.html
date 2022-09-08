@@ -12,7 +12,8 @@
         <li>Dirección:</li>
         <li>Grupo</li>
         <li><button id="guardar" (click)="save()">Guardar</button></li>
-        <li><button id="verList" (click)="verList()">Ver Listado de Clientes</button></li>
+        <label for="verList" style="font-size: 8px;">Doble click para volver a esconder Lista</label>
+        <li><button id="verList" (click)="showClientList(true)" (dblclick)="showClientList(false)">Ver Listado de Clientes</button></li>
       </ul>
     </div>
 

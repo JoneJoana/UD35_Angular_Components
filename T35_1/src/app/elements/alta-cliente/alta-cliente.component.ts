@@ -16,6 +16,8 @@ export class AltaClienteComponent implements OnInit {
   //creamos array de tipo Client para guardar los clientes
   clientes: Client[] = [];
 
+  @Output() showClientListEventEmitter = new EventEmitter<boolean>(false);
+
   constructor() { }
 
   ngOnInit(): void {
@@ -39,8 +41,8 @@ export class AltaClienteComponent implements OnInit {
     this.group = '';
   }
 
-  verList(){
-
+  showClientList(show: boolean){
+    this.showClientListEventEmitter.emit(show);
   }
 
 }

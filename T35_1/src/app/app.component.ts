@@ -19,4 +19,10 @@ export class AppComponent implements AfterViewInit{
     this.clients = this.altaClientes.clientes
   }
 
+  showList: boolean = false;
+
+  setShowList(value: boolean): void{
+    this.showList = value;
+  }
+
 }

@@ -1,8 +1,8 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <div>
-  <app-alta-cliente></app-alta-cliente>
-  <app-listado [clientes]="clients"></app-listado>
+  <app-alta-cliente (showClientListEventEmitter)="setShowList($event)"></app-alta-cliente>
+  <app-listado [clientes]="clients" *ngIf="showList"></app-listado>
 </div>
 
 <router-outlet></router-outlet>
