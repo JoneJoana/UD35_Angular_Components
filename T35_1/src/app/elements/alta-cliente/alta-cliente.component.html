@@ -11,18 +11,18 @@
         <li>CIF:</li>
         <li>Dirección:</li>
         <li>Grupo</li>
-        <li><button id="guardar" (click)="save()">Guardar</button></li>
+        <li><button type="button" class="btn btn-info" id="guardar" (click)="save()">Guardar</button></li>
         <label for="verList" style="font-size: 8px;">Doble click para volver a esconder Lista</label>
-        <li><button id="verList" (click)="showClientList(true)" (dblclick)="showClientList(false)">Ver Listado de Clientes</button></li>
+        <li><button type="button" class="btn btn-info" id="verList" (click)="showClientList(true)" (dblclick)="showClientList(false)">Ver Listado de Clientes</button></li>
       </ul>
     </div>
 
     <div class="col-4">
       <div class="vstack gap-1">
-        <input type="text" id="name" [(ngModel)] = 'name'>
-        <input type="text" id="cif" [(ngModel)] = 'cif'>
-        <input type="text" id="direc" [(ngModel)] = 'addres'>
-        <select class="group" [(ngModel)] = 'group'>
+        <input class="form-control form-control-sm" type="text" id="name" [(ngModel)] = 'name'>
+        <input class="form-control form-control-sm" type="text" id="cif" [(ngModel)] = 'cif'>
+        <input class="form-control form-control-sm" type="text" id="direc" [(ngModel)] = 'addres'>
+        <select class="group form-select form-select-sm" [(ngModel)] = 'group'>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
