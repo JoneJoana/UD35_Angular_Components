@@ -35,6 +35,8 @@ export class AltaClienteComponent implements OnInit {
     if((this.name != ''||this.cif != '')&&this.group != ''){
       //metemos la variable en el array para guardarlo en memoria
       this.clientes.push(cliente);
+    }else{
+      alert("ERROR. Has de introducir mínimo nombre o cif además del grupo para que se registre al cliente. ")
     }
 
     //limpiamos inputs
